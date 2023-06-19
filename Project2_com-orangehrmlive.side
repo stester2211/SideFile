@@ -1,0 +1,86 @@
+{
+  "id": "bfe5584e-c5cb-4e33-b3ec-2483b1e54f78",
+  "version": "2.0",
+  "name": "Project2_com-orangehrmlive",
+  "url": "https://opensource-demo.orangehrmlive.com",
+  "tests": [{
+    "id": "e3654fef-f749-42ae-906a-b905c54369b4",
+    "name": "ForgotPassword",
+    "commands": [{
+      "id": "5f945291-fa2b-4188-b6b5-ec3bfca19c48",
+      "comment": "",
+      "command": "open",
+      "target": "/web/index.php/auth/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34a20022-de86-4e83-8e88-025988e81aed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06875161-c154-448d-aa9c-b3c5b0c2aa48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.orangehrm-login-forgot-header",
+      "targets": [
+        ["css=.orangehrm-login-forgot-header", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[4]/p", "xpath:idRelative"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Forgot your password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e63cde-a5b8-43cc-91fd-435b7a799895",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7728e36-bd29-4a00-8ee5-e14f713ae3ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "vpatel246@gmail.com"
+    }, {
+      "id": "8e6cb2bb-00bf-495a-a3c6-fcbcc8548002",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button--secondary",
+      "targets": [
+        ["css=.oxd-button--secondary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/form/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e692b98e-2d31-442a-84c8-db4cfaedda89",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3654fef-f749-42ae-906a-b905c54369b4"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/"],
+  "plugins": []
+}

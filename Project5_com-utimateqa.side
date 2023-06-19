@@ -1,0 +1,128 @@
+{
+  "id": "414eab1a-c111-493d-b6f2-5d57e4aa08c7",
+  "version": "2.0",
+  "name": "Project5_com-utimateqa",
+  "url": "https://courses.ultimateqa.com",
+  "tests": [{
+    "id": "ea301e4e-2d0a-41a0-ba9f-e75c75f1de17",
+    "name": "Login",
+    "commands": [{
+      "id": "4dad7747-6f01-4172-975d-85f25e51c148",
+      "comment": "",
+      "command": "open",
+      "target": "/users/sign_in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb23e58c-edaa-461f-9cbd-9d89e56ee921",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55ee2c86-cc05-4c37-8079-c756998cd921",
+      "comment": "",
+      "command": "click",
+      "target": "id=user[email]",
+      "targets": [
+        ["id=user[email]", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user\\[email\\]", "css:finder"],
+        ["xpath=//input[@id='user[email]']", "xpath:attributes"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0438a4ef-b347-44cf-8b5b-254d08a1e3ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=user[email]",
+      "targets": [
+        ["id=user[email]", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user\\[email\\]", "css:finder"],
+        ["xpath=//input[@id='user[email]']", "xpath:attributes"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ff@gmail.com"
+    }, {
+      "id": "b24dbf53-d793-465d-bda2-5e52e9559fa8",
+      "comment": "",
+      "command": "click",
+      "target": "id=user[password]",
+      "targets": [
+        ["id=user[password]", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user\\[password\\]", "css:finder"],
+        ["xpath=//input[@id='user[password]']", "xpath:attributes"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03e2dd28-db4b-4446-983d-7f8efa655499",
+      "comment": "",
+      "command": "type",
+      "target": "id=user[password]",
+      "targets": [
+        ["id=user[password]", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user\\[password\\]", "css:finder"],
+        ["xpath=//input[@id='user[password]']", "xpath:attributes"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456789"
+    }, {
+      "id": "8bddc547-4ec6-4049-af80-85e34d85708f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__remember-me",
+      "targets": [
+        ["css=.form__remember-me", "css:finder"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7100b43-8d58-4267-a702-e8d440a2ba39",
+      "comment": "",
+      "command": "click",
+      "target": "id=user[remember_me]",
+      "targets": [
+        ["id=user[remember_me]", "id"],
+        ["css=#user\\[remember_me\\]", "css:finder"],
+        ["xpath=//input[@id='user[remember_me]']", "xpath:attributes"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ba7de9-4dd0-49eb-a7b3-36a6a791350f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-primary",
+      "targets": [
+        ["css=.button-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='sign_in_f656dfb310']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ed5369b4-fa9a-4ee5-8f43-029fe1ac5072",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea301e4e-2d0a-41a0-ba9f-e75c75f1de17"]
+  }],
+  "urls": ["https://courses.ultimateqa.com/"],
+  "plugins": []
+}
